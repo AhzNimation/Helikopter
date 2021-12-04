@@ -1,0 +1,56 @@
+body{
+    background: linear-gradient(orange, red, rgb(55, 55, 55));
+}
+table{
+    animation: 5s infinite alternate naikturun;
+}
+#blink{
+    animation: 130ms infinite alternate blinking;
+}
+#zombie{
+    margin-top: 100px;
+    animation: 5s infinite alternate zombie-move;
+    width: 100px;
+}
+.container{
+    animation: 1s infinite alternate naikturun;
+    margin-left: 5%;
+}
+.db2{
+    margin: 0 0 -1rem 0.3rem;
+}
+.container2{
+    width: 120%;
+    min-height: 350px;
+    max-height: 5000px;
+    background: linear-gradient(gray, rgb(58, 58, 58)); 
+    margin-top: 10rem;
+    margin-left: -2pc;
+}
+
+/* Animation */
+
+@keyframes naikturun{
+    from{
+        transform: translate(0, 100px);
+    }
+    to{
+        transform: translate(0, 50px);
+    }
+}
+@keyframes blinking{
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes zombie-move{
+    fromt{
+        transform: translate(50px, 0px);
+    }
+    to{
+        transform: translate(250px, 0px);
+    }
+}
